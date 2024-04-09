@@ -1,0 +1,85 @@
+package com.example.recyclerview
+
+class TaskListProvider {
+
+    companion object{
+        val taskList = listOf<Task>(
+
+            Task(
+                "Semana15",
+                "Lunes",
+                9
+            ),
+            Task(
+                "Semana15",
+                "Martes",
+                9
+            ),
+            Task(
+                "Semana15",
+                "Miercoles",
+                9
+            ),
+            Task(
+                "Semana15",
+                "Jueves",
+                9
+            ),
+            Task(
+                "Semana15",
+                "Viernes",
+                5
+            ),
+            Task(
+                "Semana16",
+                "Lunes",
+                9
+            ),
+            Task(
+                "Semana16",
+                "Martes",
+                9
+            ),
+            Task(
+                "Semana16",
+                "Miercoles",
+                9
+            ),
+            Task(
+                "Semana16",
+                "Jueves",
+                9
+            ),
+            Task(
+                "Semana16",
+                "Viernes",
+                5
+            ),
+            Task(
+                "Semana17",
+                "Lunes",
+                9
+            ),
+            Task(
+                "Semana17",
+                "Martes",
+                9
+            ),
+            Task(
+                "Semana17",
+                "Miercoles",
+                9
+            ),
+            Task(
+                "Semana17",
+                "Jueves",
+                9
+            ),
+            Task(
+                "Semana17",
+                "Viernes",
+                5
+            ),
+        )
+    }
+}

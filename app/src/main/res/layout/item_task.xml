@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/grey">
+
+        <TextView
+            android:id="@+id/tvWeek"
+            android:layout_width="89dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Semana" />
+
+        <TextView
+            android:id="@+id/tvDay"
+            android:layout_width="79dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/grey"
+            app:layout_constraintStart_toEndOf="@+id/tvWeek"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Dia" />
+
+        <TextView
+            android:id="@+id/tvHours"
+            android:layout_width="82dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="@color/grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toEndOf="@+id/tvDay"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Horario" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Cuaderno De Practicas</string>
+    <string name="fiche_semanal_del_alumno">Fiche Semanal Del Alumno</string>
+    <string name="actividades_desarrolladas">Actividades Desarrolladas</string>
+    <string name="horas">Horas</string>
+    <string name="dia">Dia</string>
+    <string name="a_adir_actividad">Añadir Actividad</string>
+    <string name="add_tarea">Add Tarea</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
