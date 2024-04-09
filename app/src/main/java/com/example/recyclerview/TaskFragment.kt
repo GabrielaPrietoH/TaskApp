@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.fragment.findNavController
 import com.example.recyclerview.adapter.TareasAdapter
 import com.example.recyclerview.databinding.FragmentTaskBinding
 
@@ -28,8 +29,12 @@ class TaskFragment(
 
 
     private fun initRecyclerView() {
-        binding.rvTasks.adapter = TareasAdapter(TaskListProvider.taskList)
+        binding.rvTasks.adapter = TareasAdapter(TaskListProvider.taskList, ::navigate)
 
+    }
+
+    private fun navigate(task: Task) {
+        findNavController().navigate(R.id.action_itemFragment_to_addTask)
     }
 
 
