@@ -8,16 +8,19 @@
     <fragment
         android:id="@+id/taskFragment"
         android:name="com.example.recyclerview.TaskFragment"
-        android:label="fragment_item_list"
-        tools:layout="@layout/fragment_task" >
+        android:label="fragment_task"
+        tools:layout="@layout/fragment_task">
+
         <action
-            android:id="@+id/action_itemFragment_to_addTarea"
-            app:destination="@id/addTarea" />
+            android:id="@+id/action_itemFragment_to_addTask"
+            app:destination="@id/addTask" />
+
     </fragment>
+
     <fragment
-        android:id="@+id/addTarea"
+        android:id="@+id/addTask"
         android:name="com.example.recyclerview.AddTaskFragment"
-        android:label="fragment_add_tarea"
+        android:label="fragment_add_task"
         tools:layout="@layout/fragment_add_task" />
 
 </navigation>

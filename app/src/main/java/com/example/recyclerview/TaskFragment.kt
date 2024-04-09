@@ -28,7 +28,7 @@ class TaskFragment(
 
 
     private fun initRecyclerView() {
-        binding.rvTareas.adapter = TareasAdapter(TaskListProvider.taskList)
+        binding.rvTasks.adapter = TareasAdapter(TaskListProvider.taskList)
 
     }
 
