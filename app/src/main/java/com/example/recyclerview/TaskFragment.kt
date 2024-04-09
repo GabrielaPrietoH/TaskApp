@@ -34,12 +34,11 @@ class TaskFragment(
     }
 
     private fun navigate(task: Task) {
-       val action = R.id.action_itemFragment_to_addTask
         //Nav directions
         //Codelab Base de Datos
         //TaskDetails
         binding.addButtom.setOnClickListener(
-            Navigation.createNavigateOnClickListener(action)
+            Navigation.createNavigateOnClickListener(R.id.action_itemFragment_to_addTask)
         )
     }
 
