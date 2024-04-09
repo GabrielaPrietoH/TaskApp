@@ -6,7 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
-import androidx.navigation.fragment.findNavController
+import androidx.navigation.Navigation
 import com.example.recyclerview.adapter.TareasAdapter
 import com.example.recyclerview.databinding.FragmentTaskBinding
 
@@ -34,7 +34,14 @@ class TaskFragment(
     }
 
     private fun navigate(task: Task) {
-        findNavController().navigate(R.id.action_itemFragment_to_addTask)
+        //Nav directions
+        //Codelab Base de Datos
+        //Añadir floating button + esquina inferior
+        //TaskDetails
+
+        binding.addButtom.setOnClickListener(
+            Navigation.createNavigateOnClickListener(R.id.action_itemFragment_to_addTask)
+        )
     }
 
 
